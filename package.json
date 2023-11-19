@@ -1,6 +1,13 @@
 {
   "name": "@richaardev/eslint-config",
+  "author": "richaardev",
   "version": "1.0.0",
+  "private": false,
+  "description": "ESLint configuration used by richaardev.",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./src/node.js",
     "./next": "./src/next.js",
@@ -12,7 +19,13 @@
     "url": "git+https://github.com/richaardev/eslint-config.git"
   },
   "peerDependencies": {
-    "eslint": "^8.49.0"
+    "eslint": "^8.49.0",
+    "typescript": ">=4"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.7.2",
