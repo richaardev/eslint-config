@@ -14,6 +14,16 @@ module.exports = {
       "varsIgnorePattern": "^_",
       "caughtErrorsIgnorePattern": "^_",
       "destructuredArrayIgnorePattern": "^_",
-    }]
+    }],
+    "sort-imports": ["error", {
+      ignoreCase: true,
+      ignoreDeclarationSort: true,
+      allowSeparatedGroups: true,
+      // memberSyntaxSortOrder: ['all', 'multiple', 'single', 'none'],
+    }],
+    "sort-vars": ["error", { "ignoreCase": true }],
+    "no-await-in-loop": ["error"],
+    "no-constructor-return": ["error"],
+    "no-template-curly-in-string": ["error"],
   }
 };
