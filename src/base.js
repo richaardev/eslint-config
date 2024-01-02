@@ -8,9 +8,10 @@ module.exports = {
     ...PRESETS,
   ],
   rules: {
-    "no-console": ["error"],
+    "no-console": ["error", {
+      allow: ["warn", "error"]
+    }],
     "no-unused-vars": ["error", {
-      "argsIgnorePattern": "^_",
       "varsIgnorePattern": "^_",
       "caughtErrorsIgnorePattern": "^_",
       "destructuredArrayIgnorePattern": "^_",
@@ -19,7 +20,6 @@ module.exports = {
       ignoreCase: true,
       ignoreDeclarationSort: true,
       allowSeparatedGroups: true,
-      // memberSyntaxSortOrder: ['all', 'multiple', 'single', 'none'],
     }],
     "sort-vars": ["error", { "ignoreCase": true }],
     "no-await-in-loop": ["error"],

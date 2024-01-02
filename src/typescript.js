@@ -5,10 +5,10 @@ module.exports = {
     node: true,
   },
   extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/typescript",
     require.resolve("./base"),
     require.resolve("./node"),
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -48,12 +48,12 @@ module.exports = {
     "@typescript-eslint/no-non-null-assertion": "error",
     "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
     "@typescript-eslint/no-mixed-enums": "error",
+    "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/no-unused-vars": ["error", {
-      "argsIgnorePattern": "^_",
+      "args": "none",
       "varsIgnorePattern": "^_",
       "caughtErrorsIgnorePattern": "^_",
       "destructuredArrayIgnorePattern": "^_",
     }],
-    "@typescript-eslint/member-ordering": "error",
   },
 };

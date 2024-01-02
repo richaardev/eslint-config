@@ -5,10 +5,10 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
     require.resolve("./base"),
     require.resolve("./typescript"),
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
   ],
   plugins: ["react", "react-hooks"],
   parserOptions: {
