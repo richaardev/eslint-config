@@ -3,13 +3,10 @@ module.exports = {
   // extends: ["plugin:import/typescript"],
   plugins: ["import"],
   settings: {
-    'import/parsers': {
-      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
-    },
-    'import/resolver': {
+    "import/resolver": {
       typescript: true,
-      node: true
-    }
+      node: true,
+    },
   },
   rules: {
     "import/prefer-default-export": "off",
@@ -18,7 +15,7 @@ module.exports = {
       {
         alphabetize: {
           caseInsensitive: true,
-          order: "asc"
+          order: "asc",
         },
         "newlines-between": "always",
         warnOnUnassignedImports: true,
@@ -28,30 +25,27 @@ module.exports = {
           "external",
           "internal",
           ["parent", "sibling", "index"],
-          "object"
-        ]
-      }
+          "object",
+        ],
+      },
     ],
     "import/extensions": [
       "error",
       "ignorePackages",
       {
         "": "never",
-        "js": "never",
-        "mjs": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
+        js: "never",
+        mjs: "never",
+        jsx: "never",
+        ts: "never",
+        tsx: "never",
+      },
     ],
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": [
-          "**/*.test.ts",
-          "**/*.test.tsx"
-        ]
-      }
-    ]
-  }
+        devDependencies: ["**/*.test.ts", "**/*.test.tsx"],
+      },
+    ],
+  },
 };

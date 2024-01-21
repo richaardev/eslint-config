@@ -17,8 +17,8 @@ module.exports = {
   },
   settings: {
     react: {
-      version: "detect"
-    }
+      version: "detect",
+    },
   },
   rules: {
     "react/jsx-no-bind": [
