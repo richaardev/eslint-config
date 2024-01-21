@@ -9,7 +9,7 @@
     "access": "public"
   },
   "exports": {
-    ".": "./src/node.js",
+    ".": "./src/base.js",
     "./next": "./src/next.js",
     "./react": "./src/react.js",
     "./typescript": "./src/typescript.js"
