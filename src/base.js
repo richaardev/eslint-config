@@ -10,7 +10,6 @@ module.exports = {
   extends: [
     "standard",
     require.resolve("./presets/import.js"),
-    require.resolve("./presets/prettier.js"),
     require.resolve("./typescript.js"),
   ],
   plugins: ["only-warn"],
