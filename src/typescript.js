@@ -53,7 +53,6 @@ module.exports = !tsConfigExists
             "@typescript-eslint/no-unsafe-argument": "error",
             "@typescript-eslint/no-unnecessary-type-arguments": "error",
             "@typescript-eslint/no-unnecessary-condition": "error",
-            "@typescript-eslint/no-unnecessary-condition": "error",
             "@typescript-eslint/no-redundant-type-constituents": "error",
             "@typescript-eslint/no-non-null-assertion": "error",
             "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
