@@ -1,11 +1,22 @@
-const PRESETS = ["import", "prettier"].map((preset) =>
-  require.resolve(`./presets/${preset}`),
-);
+
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
+  ignorePatterns: [".next", "build", "dist", "out"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+
+  "env": {
+    "es6": true
+  },
   extends: [
     "standard",
-    ...PRESETS,
+    require.resolve("./presets/import.js"),
+    require.resolve("./presets/prettier.js"),
+  ],
+  plugins: [
+    "only-warn",
   ],
   rules: {
     "no-console": ["error", {
