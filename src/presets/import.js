@@ -9,6 +9,8 @@ module.exports = {
     },
   },
   rules: {
+    "import/no-duplicates": "error",
+    "import/no-self-import": "error",
     "import/prefer-default-export": "off",
     "import/order": [
       "error",
@@ -19,14 +21,7 @@ module.exports = {
         },
         "newlines-between": "always",
         warnOnUnassignedImports: true,
-        groups: [
-          "type",
-          "builtin",
-          "external",
-          "internal",
-          ["parent", "sibling", "index"],
-          "object",
-        ],
+        groups: ["type", "builtin", "external", ["internal", "parent", "sibling", "index"], "object"],
       },
     ],
     "import/extensions": [

@@ -39,7 +39,6 @@ module.exports = !tsConfigExists
             "@typescript-eslint/restrict-plus-operands": "error",
             "@typescript-eslint/consistent-type-assertions": "error",
             "@typescript-eslint/consistent-type-definitions": ["error", "type"],
-            "@typescript-eslint/consistent-type-imports": "error",
             "@typescript-eslint/consistent-generic-constructors": "error",
             "@typescript-eslint/consistent-indexed-object-style": "error",
             "@typescript-eslint/prefer-return-this-type": "error",

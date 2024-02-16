@@ -30,15 +30,6 @@ module.exports = {
         destructuredArrayIgnorePattern: "^_",
       },
     ],
-    "sort-imports": [
-      "error",
-      {
-        ignoreCase: true,
-        ignoreDeclarationSort: true,
-        allowSeparatedGroups: true,
-      },
-    ],
-    "sort-vars": ["error", { ignoreCase: true }],
     "no-await-in-loop": ["error"],
     "no-constructor-return": ["error"],
     "no-template-curly-in-string": ["error"],
