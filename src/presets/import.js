@@ -17,11 +17,18 @@ module.exports = {
       {
         alphabetize: {
           caseInsensitive: true,
-          order: "asc",
+          order: "desc",
+          orderImportKind: "asc",
         },
         "newlines-between": "always",
         warnOnUnassignedImports: true,
-        groups: ["type", "builtin", "external", ["internal", "parent", "sibling", "index"], "object"],
+        pathGroups: [
+          {
+            pattern: "@/**",
+            group: "internal",
+          },
+        ],
+        groups: ["type", "builtin", "external", ["parent", "sibling", "index", "internal"], "object"],
       },
     ],
     "import/extensions": [
