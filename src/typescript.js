@@ -44,7 +44,9 @@ module.exports = !tsConfigExists
             "@typescript-eslint/prefer-return-this-type": "error",
             "@typescript-eslint/prefer-reduce-type-parameter": "error",
             "@typescript-eslint/prefer-optional-chain": "error",
-            "@typescript-eslint/prefer-literal-enum-member": "error",
+            "@typescript-eslint/prefer-literal-enum-member":[ "error", {
+              allowBitwiseExpressions: true
+            }],
             "@typescript-eslint/no-confusing-void-expression": "error",
             "@typescript-eslint/no-confusing-non-null-assertion": "error",
             "@typescript-eslint/no-duplicate-type-constituents": "error",
