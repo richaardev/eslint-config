@@ -47,8 +47,6 @@ module.exports = !tsConfigExists
             "@typescript-eslint/no-confusing-void-expression": "error",
             "@typescript-eslint/no-confusing-non-null-assertion": "error",
             "@typescript-eslint/no-duplicate-type-constituents": "error",
-            "@typescript-eslint/no-unsafe-assignment": "error",
-            "@typescript-eslint/no-unsafe-argument": "error",
             "@typescript-eslint/no-unnecessary-type-arguments": "error",
             "@typescript-eslint/no-unnecessary-condition": "error",
             "@typescript-eslint/no-redundant-type-constituents": "error",
