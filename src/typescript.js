@@ -56,6 +56,8 @@ module.exports = !tsConfigExists
             "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
             "@typescript-eslint/no-mixed-enums": "error",
             "@typescript-eslint/member-ordering": "error",
+
+            "no-unused-vars": "off",
             "@typescript-eslint/no-unused-vars": [
               "error",
               {
