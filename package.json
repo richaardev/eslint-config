@@ -1,7 +1,7 @@
 {
   "name": "@richaardev/eslint-config",
   "author": "richaardev",
-  "version": "1.2.6",
+  "version": "1.3.0",
   "private": false,
   "description": "ESLint configuration used by richaardev.",
   "license": "MIT",
