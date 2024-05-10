@@ -13,7 +13,6 @@ module.exports = {
     require.resolve("./presets/prettier.js"),
     require.resolve("./typescript.js"),
   ],
-  plugins: ["only-warn"],
   rules: {
     quotes: ["error", "double"],
     "no-console": [
@@ -22,16 +21,5 @@ module.exports = {
         allow: ["warn", "error"],
       },
     ],
-    "no-unused-vars": [
-      "error",
-      {
-        varsIgnorePattern: "^_",
-        caughtErrorsIgnorePattern: "^_",
-        destructuredArrayIgnorePattern: "^_",
-      },
-    ],
-    "no-await-in-loop": ["error"],
-    "no-constructor-return": ["error"],
-    "no-template-curly-in-string": ["error"],
   },
 };

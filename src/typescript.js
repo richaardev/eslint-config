@@ -35,7 +35,6 @@ module.exports = !tsConfigExists
             ],
             "@typescript-eslint/adjacent-overload-signatures": "error",
             "@typescript-eslint/await-thenable": "error",
-            "@typescript-eslint/restrict-template-expressions": "error",
             "@typescript-eslint/restrict-plus-operands": "error",
             "@typescript-eslint/consistent-type-assertions": "error",
             "@typescript-eslint/consistent-type-definitions": ["error", "type"],
