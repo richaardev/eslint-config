@@ -28,7 +28,13 @@ module.exports = {
             group: "internal",
           },
         ],
-        groups: ["type", "builtin", "external", ["parent", "sibling", "index", "internal"], "object"],
+        groups: [
+          "type",
+          "builtin",
+          "external",
+          ["parent", "sibling", "index", "internal"],
+          "object",
+        ],
       },
     ],
     "import/extensions": [

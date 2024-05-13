@@ -5,7 +5,7 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    require.resolve("./typescript"),
+    require.resolve("./base"),
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",

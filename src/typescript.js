@@ -12,7 +12,10 @@ module.exports = !tsConfigExists
             es2021: true,
             node: true,
           },
-          extends: ["plugin:@typescript-eslint/recommended", "plugin:import/typescript"],
+          extends: [
+            "plugin:@typescript-eslint/recommended",
+            "plugin:import/typescript",
+          ],
           parser: "@typescript-eslint/parser",
           parserOptions: {
             ecmaVersion: "latest",
@@ -22,7 +25,11 @@ module.exports = !tsConfigExists
           plugins: ["@typescript-eslint"],
           settings: {
             "import/parsers": {
-              [require.resolve("@typescript-eslint/parser")]: [".ts", ".tsx", ".d.ts"],
+              [require.resolve("@typescript-eslint/parser")]: [
+                ".ts",
+                ".tsx",
+                ".d.ts",
+              ],
             },
           },
           rules: {
@@ -50,7 +57,8 @@ module.exports = !tsConfigExists
             "@typescript-eslint/no-unnecessary-condition": "error",
             "@typescript-eslint/no-redundant-type-constituents": "error",
             "@typescript-eslint/no-non-null-assertion": "error",
-            "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
+            "@typescript-eslint/no-non-null-asserted-nullish-coalescing":
+              "error",
             "@typescript-eslint/no-mixed-enums": "error",
             "@typescript-eslint/member-ordering": "error",
 
